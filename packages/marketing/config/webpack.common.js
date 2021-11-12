@@ -2,6 +2,12 @@ module.exports = {
   module: {
     rules: [
       {
+        resolve: {
+          modules: [
+            'app',
+            'node_modules',
+          ],
+        },
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
